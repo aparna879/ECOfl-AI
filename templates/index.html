@@ -86,15 +86,15 @@
 							<h4 class="modal-title">REPORT KACHRA</h4>
 						</div>
 						<div class="modal-body">
-								<form>
+								<form id="report-form" action="/" method="POST">
 										<div style="width:30%; margin: auto; margin-top: 1%;">
 										  <div class="form-group">
 											  <label for="exampleInputName">Name</label>
-											  <input type="name" class="form-control" id="exampleInputName" placeholder="Name">
+											  <input id="name" type="name" name="name" class="form-control" placeholder="Name">
 										  </div>
 										  <div class="form-group">
 											<label for="exampleInputEmail1">Email address</label>
-											<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+											<input id="email" type="email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
 										  </div>
 										  <div class="form-group"> 
 											 <span>
@@ -106,61 +106,38 @@
 													<input type="text" name="lng" id="lng" />
 											</span>
 										  </div>
-										  <div class="dropdown">
-											  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										  <div class="dropdown" id="severity" name="severity">
+											  <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 												SEVERITY LEVEL
-											  </button>
+											  </button>-->
+											  <select name="severity"> 
 											  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-												<a class="dropdown-item" href="#" value="1">Good </a><br/>
-												<a class="dropdown-item" href="#" value="2">Average</a><br/>
-												<a class="dropdown-item" href="#" value="3">Regular but needs to be cleaned</a><br/>
-												<a class="dropdown-item" href="#" value="4">Severe</a><br/>
-												<a class="dropdown-item" href="#" value="5">Very Very Severe</a><br/>
+												<option value="1">Good </option>
+												<option value="2">Average</option>
+												<option value="3">Regular but needs to be cleaned</option>
+												<option value="4">Severe</option>
+												<option value="5">Very Very Severe</option></select>
 											  </div>
-											</div>
 										  </div>
-											<br/>
-										  <center><button type="submit" class="btn btn-primary">Submit</button></center>
+										  </div>
+										  <div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												<button type="submit" name="submit1" value="submit" class="btn btn-primary">Submit</button>
+										</div>
 									  </form>
-							<p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes</button>
-						</div>
+								</div>
+
 					</div>
 				</div>
 			</div>
-			<div id="testmodal-1" class="modal fade">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title">Confirmation</h4>
-						</div>
-						<div class="modal-body">
-							<p>Do you want to save changes you made to document before closing?</p>
-							<p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="element" class="btn btn-default show-modal">REPORT KACHRA</div>
-		
-			
-			
-			
+			<div id="element" class="btn btn-default show-modal">REPORT KACHRA</div>	
         
         <!-- Footer -->
         <footer>
 	        <div class="container">
 	        	<div class="row">
 	        		<div class="col-sm-12 footer-copyright">
-                    	&copy; Bootstrap Navbar Template by <a href="http://azmind.com">AZMIND</a>
+                    	&copy; Kachra2k18
                     </div>
                 </div>
 	        </div>
@@ -184,14 +161,14 @@
 					lat: position.coords.latitude,
 					lng: position.coords.longitude
 				  };
-				  document.getElementById('lat').value = count();
-				  document.getElementById('lng').value = count();
+				  document.getElementById('lat').value = count1();
+				  document.getElementById('lng').value = count2();
 
-				  function count(){
+				  function count1(){
 					  return pos.lat;
 				  };
 
-				  function count(){
+				  function count2(){
 					  return pos.lng;
 				  };
 				  console.log(pos.lat);
