@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Navbar Menu Template</title>
+
+        <!-- CSS -->        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
+        <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../static/css/animate.css">
+		<link rel="stylesheet" href="../static/css/style.css">
+		<link rel="stylesheet" href="../static/css/custom.css">
+
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="../static/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../static/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../static/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../static/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="../static/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+    
+    	<!-- Top content -->
+        <div class="top-content">
+        
+        	<!-- Top menu -->
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">Bootstrap Navbar Menu Template</a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="top-navbar-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Features</a></li>
+							<li><a href="#">Video</a></li>
+							<li><a href="#">Clients</a></li>
+							<li><a href="#">Plans</a></li>
+							<li><a href="#">Faq</a></li>
+							<li><a class="btn btn-link-3" href="#">Button</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+        
+        	<div class="top-content-container">
+	        	<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text wow fadeInLeft">
+							<h1>Bootstrap Navbar Menu Template</h1>
+							<div class="description">
+								<p class="medium-paragraph">
+									This is a free "Navbar Menu" made with the Bootstrap framework. 
+									Download it on <a href="http://azmind.com">AZMIND</a> and enjoy!
+								</p>
+							</div>
+						</div>
+					</div>
+	            </div>
+            </div>
+		</div>  
+		
+		<div id="map" style="width: 100%; height: 400px;"></div>
+		 
+		<!--report-->
+		<div id="testmodal" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">REPORT KACHRA</h4>
+						</div>
+						<div class="modal-body">
+								<form>
+										<div style="width:30%; margin: auto; margin-top: 1%;">
+										  <div class="form-group">
+											  <label for="exampleInputName">Name</label>
+											  <input type="name" class="form-control" id="exampleInputName" placeholder="Name">
+										  </div>
+										  <div class="form-group">
+											<label for="exampleInputEmail1">Email address</label>
+											<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+										  </div>
+										  <div class="form-group"> 
+											 <span>
+												 <label for="exampleInputName">Lattitude</label>
+												 <input type="text" name="lat" id="lat" />
+											</span>
+											<span>
+													<label for="exampleInputName">Longitude</label>
+													<input type="text" name="lng" id="lng" />
+											</span>
+										  </div>
+										  <div class="dropdown">
+											  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												SEVERITY LEVEL
+											  </button>
+											  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#" value="1">Good </a><br/>
+												<a class="dropdown-item" href="#" value="2">Average</a><br/>
+												<a class="dropdown-item" href="#" value="3">Regular but needs to be cleaned</a><br/>
+												<a class="dropdown-item" href="#" value="4">Severe</a><br/>
+												<a class="dropdown-item" href="#" value="5">Very Very Severe</a><br/>
+											  </div>
+											</div>
+										  </div>
+											<br/>
+										  <center><button type="submit" class="btn btn-primary">Submit</button></center>
+									  </form>
+							<p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="testmodal-1" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Confirmation</h4>
+						</div>
+						<div class="modal-body">
+							<p>Do you want to save changes you made to document before closing?</p>
+							<p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="element" class="btn btn-default show-modal">REPORT KACHRA</div>
+		
+			
+			
+			
+        
+        <!-- Footer -->
+        <footer>
+	        <div class="container">
+	        	<div class="row">
+	        		<div class="col-sm-12 footer-copyright">
+                    	&copy; Bootstrap Navbar Template by <a href="http://azmind.com">AZMIND</a>
+                    </div>
+                </div>
+	        </div>
+		</footer>
+
+		<!--GEOCODER-->
+		<script>
+			var map, infoWindow;
+			function initMap() {
+			  map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: -34.397, lng: 150.644},
+				zoom: 6
+			  });
+			  infoWindow = new google.maps.InfoWindow;
+			  map.setOptions({draggable: true});
+	  
+			  // HTML5 geolocation.
+			  if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(function(position) {
+				  var pos = {
+					lat: position.coords.latitude,
+					lng: position.coords.longitude
+				  };
+				  document.getElementById('lat').value = count();
+				  document.getElementById('lng').value = count();
+
+				  function count(){
+					  return pos.lat;
+				  };
+
+				  function count(){
+					  return pos.lng;
+				  };
+				  console.log(pos.lat);
+				  console.log(pos.lng);
+	  
+				  infoWindow.setPosition(pos);
+				  infoWindow.setContent('Location found.');
+				  infoWindow.open(map);
+				  map.setCenter(pos);
+				}, function() {
+				  handleLocationError(true, infoWindow, map.getCenter());
+				});
+			  } else {
+				// Browser doesn't support Geolocation
+				handleLocationError(false, infoWindow, map.getCenter());
+			  }
+			}
+	  
+			function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+			  infoWindow.setPosition(pos);
+			  infoWindow.setContent(browserHasGeolocation ?
+									'Error: The Geolocation service failed.' :
+									'Error: Your browser doesn\'t support geolocation.');
+			  infoWindow.open(map);
+			}
+		  </script>
+		  <script async defer
+		  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu1vpmfXxqJ1sVpTQu-27Y36qu0KrCt3M&callback=initMap">
+		  </script>
+
+        <!-- Javascript -->
+        <script src="../static/js/jquery-1.11.1.min.js"></script>
+        <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../static/js/jquery.backstretch.min.js"></script>
+        <script src="../static/js/wow.min.js"></script>
+        <script src="../static/js/retina-1.1.0.min.js"></script>
+		<script src="../static/js/scripts.js"></script>
+		<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>-->
+		<script src="../static/js/custom.js"></script>
+
+
+    </body>
+
+</html>
