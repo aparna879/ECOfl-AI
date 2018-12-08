@@ -1,4 +1,4 @@
-#ECOfl-AI
+# ECOfl-AI
 
 A platform which will allow people to locate garbage around them and send the
 details to our server where we will process data and use ML DBSCAN cluster
