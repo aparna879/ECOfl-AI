@@ -1,10 +1,9 @@
 # ECOfl-AI
 
-A platform which will allow people to locate garbage around them and send the
-details to our server where we will process data and use ML DBSCAN cluster
-algorithm to cluster the heat location and find the optimal path using Travelling
-Sales Person Algorithm (TSP). At the end of the day we’ll have a set of
-coordinates and to send garbage trucks to pick up garbage and a real time
-heatmap to make people realize the amount of garbage around their locality. Not
-to forget the directly proportional relation between user base and accuracy of
-location.
+• The user will report the location of the un-attended garbage.
+• After getting requests, we will cluster the location of request generated. (DBSCAN)
+• Using Image Recognition we can rate the importance of the garbage.
+• We will find shortest route for collecting the waste. (TSP)
+• The app will learn the pattern of request generated and pattern, when the garbage is generated at which location.
+• After collecting, we can recycle it and sell it to different industries, generate biomass and sell it or sell it to 3d printer manufacturer for the filler.
+• We will have a reward point system for the user who will report the location.
